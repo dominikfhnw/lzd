@@ -14,5 +14,6 @@ Just a dump of my compression/decompression stuff:
 * `lzemb.asm` serves as a testbed for the different algorithms
 * `lzd4.asm` is the 31b LZSS decompressor
 * `lzd*.asm` are all the other LZ-type decompressors. All of them have (too many) ifdefs to tune the size
+  * Hint: `grep VERSION: *` to get short descriptions for what the files do
 * `lz4pack.sh` is a ready-to-use lz4 based exepacker
 * `rle.asm` contains RLE decompressors from 9..15b
