@@ -1,4 +1,7 @@
 ; VERSION: 6/14 bit litlen. Exit if matchlen==0. 8 bit matchlen. 6/14 bit matchoffset. 31 byte.
+;
+; hint for future me: varints are limited to 31bit, because that made the code slightly smaller.
+; varint==3 might be the 32bit version
 
 ; decompressors:
 ;	NAME	FLAG	LIT	MOFF	MLEN	SIZE
