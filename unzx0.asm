@@ -8,6 +8,9 @@ ls -l "$OUT"
 exit
 %endif
 
+; note for future me and for others: my 32bit version is 82 bytes
+; (w/storing .get_elias in ebp enabled)
+
 ;  unzx0_8088.S - ZX0 decompressor for 8088 - 81 bytes - NASM
 ;
 ;  inputs:
@@ -121,3 +124,7 @@ zx0_decompress:
 	ret
 .done:
 
+%ifmacro rset
+	rset	ebp, -1
+	rset	edx, -1
+%endif
